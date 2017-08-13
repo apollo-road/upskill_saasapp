@@ -17,11 +17,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-
+// typography styles
 h1, h2, h3 {
   font-family: 'Saira', sans-serif;
 }
 
+// Background gradient
 .navbar, .home-callout {
   //gradient provided by @_ighosh from uigradients.com
 
@@ -31,28 +32,21 @@ h1, h2, h3 {
 
 }
 
+// Navbar styles
 .navbar {
   border: none;
 }
 
-.navbar-default .navbar-brand {
-  color:white;
-}
-
-.navbar-default .navbar-brand:hover {
-  color:white;
-  opacity: 0.75;
-}
-
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color:white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-nav:hover > li > a {
-  color: white;
-  opacity: 0.75;
-}
-
+// Homepage styles
 .home-callout {
   color: white;
   margin-top: -20px;
