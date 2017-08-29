@@ -1,7 +1,7 @@
 //Document Ready
 $(document).on('turbolinks:load', function(){
   var theForm = $('#pro_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup-btn');
 
   //Set Stripe Public Key
     Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
@@ -42,7 +42,7 @@ $(document).on('turbolinks:load', function(){
   if (error) {
     //if there are errors, don't send to Stripe
     submitBtn.prop('disabled', false).val("Sign Up");
-    
+    clear
   } else {
     //Send the card info to Stripe.
       Stripe.createToken({
