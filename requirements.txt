@@ -17,3 +17,10 @@ app should validate user fields. Rails app will not plan 1 or plan 2.
 * After validation, rails will send user information to Stripe along with
 card token to Stripe server and Stripe will create customer w/ token.
 * Save customer information and token via Rails to db
+
+User Profiles
+* Each user should have one profile
+* User should see link to profile once created and signed up
+* User should be able to create and view their profile
+* User profile should have a profile pic
+* User should be able to view all user profiles
